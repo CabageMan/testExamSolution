@@ -1,29 +1,29 @@
 //
-//  ViewController.m
+//  contributorDetails.m
 //  testExamSolution
 //
 //  Created by ViktorsMacbook on 20.12.17.
 //  Copyright © 2017 ViktorsMacbook. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "contributorDetails.h"
 
-@interface ViewController ()
+@interface contributorDetails ()
 
 @end
 
-@implementation ViewController
+@implementation contributorDetails
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Setup contributor data.
+    self.contributorLogin.text = [NSString stringWithFormat:@"%@", [self.contributorInfo objectForKey:@"login"]];
+    self.contributorAvatar.image = self.avatarImage;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

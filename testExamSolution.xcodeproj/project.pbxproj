@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		247AE6C01FEAB16A00ACF56A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 247AE6BF1FEAB16A00ACF56A /* AppDelegate.m */; };
-		247AE6C31FEAB16A00ACF56A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247AE6C21FEAB16A00ACF56A /* ViewController.m */; };
 		247AE6C61FEAB16A00ACF56A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247AE6C41FEAB16A00ACF56A /* Main.storyboard */; };
 		247AE6C81FEAB16A00ACF56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247AE6C71FEAB16A00ACF56A /* Assets.xcassets */; };
 		247AE6CB1FEAB16A00ACF56A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247AE6C91FEAB16A00ACF56A /* LaunchScreen.storyboard */; };
 		247AE6CE1FEAB16A00ACF56A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 247AE6CD1FEAB16A00ACF56A /* main.m */; };
 		247AE6D81FEAB16A00ACF56A /* testExamSolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 247AE6D71FEAB16A00ACF56A /* testExamSolutionTests.m */; };
 		247AE6E31FEAB16A00ACF56A /* testExamSolutionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 247AE6E21FEAB16A00ACF56A /* testExamSolutionUITests.m */; };
+		247AE6F21FEAB1CE00ACF56A /* githubContributorsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 247AE6F11FEAB1CE00ACF56A /* githubContributorsList.m */; };
+		247AE6F51FEAB97000ACF56A /* contributorDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 247AE6F41FEAB97000ACF56A /* contributorDetails.m */; };
+		24CE70051FEBD19E0097E546 /* contributorsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CE70041FEBD19E0097E546 /* contributorsListCell.m */; };
+		24CE70071FEBE46E0097E546 /* placeHolderImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24CE70061FEBE46E0097E546 /* placeHolderImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,6 @@
 		247AE6BB1FEAB16A00ACF56A /* testExamSolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testExamSolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		247AE6BE1FEAB16A00ACF56A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		247AE6BF1FEAB16A00ACF56A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		247AE6C11FEAB16A00ACF56A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		247AE6C21FEAB16A00ACF56A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		247AE6C51FEAB16A00ACF56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		247AE6C71FEAB16A00ACF56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		247AE6CA1FEAB16A00ACF56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,13 @@
 		247AE6DE1FEAB16A00ACF56A /* testExamSolutionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testExamSolutionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		247AE6E21FEAB16A00ACF56A /* testExamSolutionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testExamSolutionUITests.m; sourceTree = "<group>"; };
 		247AE6E41FEAB16A00ACF56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247AE6F01FEAB1CE00ACF56A /* githubContributorsList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = githubContributorsList.h; sourceTree = "<group>"; };
+		247AE6F11FEAB1CE00ACF56A /* githubContributorsList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = githubContributorsList.m; sourceTree = "<group>"; };
+		247AE6F31FEAB97000ACF56A /* contributorDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contributorDetails.h; sourceTree = "<group>"; };
+		247AE6F41FEAB97000ACF56A /* contributorDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contributorDetails.m; sourceTree = "<group>"; };
+		24CE70031FEBD19E0097E546 /* contributorsListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contributorsListCell.h; sourceTree = "<group>"; };
+		24CE70041FEBD19E0097E546 /* contributorsListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contributorsListCell.m; sourceTree = "<group>"; };
+		24CE70061FEBE46E0097E546 /* placeHolderImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeHolderImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +109,15 @@
 		247AE6BD1FEAB16A00ACF56A /* testExamSolution */ = {
 			isa = PBXGroup;
 			children = (
+				24CE70061FEBE46E0097E546 /* placeHolderImage.jpg */,
 				247AE6BE1FEAB16A00ACF56A /* AppDelegate.h */,
 				247AE6BF1FEAB16A00ACF56A /* AppDelegate.m */,
-				247AE6C11FEAB16A00ACF56A /* ViewController.h */,
-				247AE6C21FEAB16A00ACF56A /* ViewController.m */,
+				24CE70031FEBD19E0097E546 /* contributorsListCell.h */,
+				24CE70041FEBD19E0097E546 /* contributorsListCell.m */,
+				247AE6F01FEAB1CE00ACF56A /* githubContributorsList.h */,
+				247AE6F11FEAB1CE00ACF56A /* githubContributorsList.m */,
+				247AE6F31FEAB97000ACF56A /* contributorDetails.h */,
+				247AE6F41FEAB97000ACF56A /* contributorDetails.m */,
 				247AE6C41FEAB16A00ACF56A /* Main.storyboard */,
 				247AE6C71FEAB16A00ACF56A /* Assets.xcassets */,
 				247AE6C91FEAB16A00ACF56A /* LaunchScreen.storyboard */,
@@ -239,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				247AE6CB1FEAB16A00ACF56A /* LaunchScreen.storyboard in Resources */,
+				24CE70071FEBE46E0097E546 /* placeHolderImage.jpg in Resources */,
 				247AE6C81FEAB16A00ACF56A /* Assets.xcassets in Resources */,
 				247AE6C61FEAB16A00ACF56A /* Main.storyboard in Resources */,
 			);
@@ -265,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				247AE6C31FEAB16A00ACF56A /* ViewController.m in Sources */,
+				247AE6F51FEAB97000ACF56A /* contributorDetails.m in Sources */,
 				247AE6CE1FEAB16A00ACF56A /* main.m in Sources */,
+				24CE70051FEBD19E0097E546 /* contributorsListCell.m in Sources */,
+				247AE6F21FEAB1CE00ACF56A /* githubContributorsList.m in Sources */,
 				247AE6C01FEAB16A00ACF56A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
