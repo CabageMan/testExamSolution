@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XwY-mz-U9X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XwY-mz-U9X">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -89,31 +88,40 @@
         <scene sceneID="E46-8D-zHA">
             <objects>
                 <viewController id="EOA-Ir-MF7" customClass="contributorDetails" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jNM-oy-HjF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mdf-xB-pVI"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="z1n-aU-wfl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="krQ-Zb-5U4">
-                                <rect key="frame" x="41" y="128" width="293" height="265"/>
+                                <rect key="frame" x="37" y="131" width="300" height="265"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="265" id="wut-03-ycB"/>
+                                    <constraint firstAttribute="width" constant="300" id="7Hl-4c-C4D"/>
+                                    <constraint firstAttribute="height" constant="265" id="Grl-hd-ik3"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8R5-mV-Fl2">
-                                <rect key="frame" x="68" y="428" width="239" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8R5-mV-Fl2">
+                                <rect key="frame" x="37" y="430" width="300" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="dQC-7L-OdO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="krQ-Zb-5U4" firstAttribute="leading" secondItem="z1n-aU-wfl" secondAttribute="leadingMargin" constant="25" id="C3z-nx-BmU"/>
-                            <constraint firstItem="krQ-Zb-5U4" firstAttribute="top" secondItem="z1n-aU-wfl" secondAttribute="topMargin" constant="64" id="Y2S-T5-wnV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="krQ-Zb-5U4" secondAttribute="trailing" constant="25" id="gAW-uC-amE"/>
+                            <constraint firstItem="8R5-mV-Fl2" firstAttribute="centerX" secondItem="z1n-aU-wfl" secondAttribute="centerX" id="0Pp-0W-R9d"/>
+                            <constraint firstItem="krQ-Zb-5U4" firstAttribute="top" secondItem="jNM-oy-HjF" secondAttribute="bottom" constant="67" id="2V2-wb-LxH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8R5-mV-Fl2" secondAttribute="trailing" constant="22" id="L1c-sI-Mk1"/>
+                            <constraint firstItem="8R5-mV-Fl2" firstAttribute="top" secondItem="krQ-Zb-5U4" secondAttribute="bottom" constant="34" id="SLz-tR-LCz"/>
+                            <constraint firstItem="krQ-Zb-5U4" firstAttribute="centerX" secondItem="z1n-aU-wfl" secondAttribute="centerX" id="VdJ-jm-0Wg"/>
+                            <constraint firstItem="8R5-mV-Fl2" firstAttribute="leading" secondItem="z1n-aU-wfl" secondAttribute="leadingMargin" constant="21" id="phs-jL-LfY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bGE-0J-m7t"/>
                     </view>
                     <connections>
                         <outlet property="contributorAvatar" destination="krQ-Zb-5U4" id="RnE-h1-3tp"/>
